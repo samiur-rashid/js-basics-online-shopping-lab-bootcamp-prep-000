@@ -20,9 +20,8 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   }
 
-  else {
+  else if (cart.length == 1 || cart.length == 2) {
     var items = [];
-    if (cart.length == 1 || cart.length == 2) {
       for (var i = 0; i < cart.length; i++) {
         for (var item in cart[i]) {
           items.push(item + " at $" + cart[i][item])
@@ -32,6 +31,7 @@ function viewCart() {
   }
 
   else {
+    var items = [];
     for (var i = 0; i < cart.length; i++) {
       for (var item in cart[i]) {
         if (i == cart.length-1) {
