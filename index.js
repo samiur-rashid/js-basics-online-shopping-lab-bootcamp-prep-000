@@ -32,11 +32,9 @@ function viewCart() {
 }
 
 function total() {
-  var prices = [];
-  prices = Object.keys(cart);
-  var sum = 0;
+  var sum = 0, item;
   for (var i = 0; i < prices.length; i++) {
-    sum += prices[i];
+    sum += ;
   }
   return sum;
 }
