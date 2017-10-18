@@ -32,7 +32,7 @@ function viewCart() {
 }
 
 function total() {
-  var sum = 0, item;
+  var sum = 0;
   for (var i = 0; i < prices.length; i++) {
     sum += ;
   }
