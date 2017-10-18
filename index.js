@@ -22,6 +22,7 @@ function viewCart() {
 
   else {
     var items = [];
+    if (cart.length == 1 || cart.length == 2) {
       for (var i = 0; i < cart.length; i++) {
         for (var item in cart[i]) {
           items.push(item + " at $" + cart[i][item])
@@ -29,6 +30,7 @@ function viewCart() {
       console.log("In your cart, you have " + items.join(" and ") + ".");
     }
   }
+}
 }
 
 function total() {
