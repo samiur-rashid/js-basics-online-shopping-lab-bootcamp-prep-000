@@ -45,6 +45,7 @@ function viewCart() {
     console.log("In your cart, you have " + items.join(", ") + ".");
   }
 }
+}
 
 function total() {
   var sum = 0;
