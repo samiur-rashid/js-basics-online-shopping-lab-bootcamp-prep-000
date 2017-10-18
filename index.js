@@ -43,7 +43,6 @@ function viewCart() {
   }
 }
 }
-}
 
 function total() {
   var sum = 0;
